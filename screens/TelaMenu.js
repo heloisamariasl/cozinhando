@@ -15,11 +15,11 @@ export default function TelaMenu() {
     <Text style={styles.botaoTexto}>Doces</Text>
    </TouchableOpacity>
 
-   <TouchableOpacity style={[styles.botao, { backgroundColor: '#C1622D' }]}>
+   <TouchableOpacity style={[styles.botao, { backgroundColor: '#C1622D' }]} onPress={() => navigation.navigate('Salgados')}>
     <Text style={styles.botaoTexto}>Salgados</Text>
    </TouchableOpacity>
 
-   <TouchableOpacity style={[styles.botao, { backgroundColor: '#D6A528' }]}>
+   <TouchableOpacity style={[styles.botao, { backgroundColor: '#D6A528' }]} onPress={() => navigation.navigate('Favoritos')}>
     <Text style={styles.botaoTexto}>Favoritos</Text>
    </TouchableOpacity>
   </View>
@@ -56,4 +56,3 @@ const styles = StyleSheet.create({
   fontSize: 16
  }
 });
-
