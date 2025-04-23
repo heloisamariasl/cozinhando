@@ -1,35 +1,22 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-export default function CozinhandoComChico() {
+import TelaInicial from './screens/TelaInicial';
+import TelaMenu from './screens/TelaMenu';
+import TelaDoces from './screens/TelaDoces';
+
+const Stack = createNativeStackNavigator();
+
+export default function App() {
  return (
-  <View style={styles.container}>
-   <Image
-    source={require('./assets/chico.png')} // coloque sua imagem aqui
-    style={styles.image}
-    resizeMode="contain"
-   />
-   <Text style={styles.text}>Cozinhando com o Chico</Text>
-  </View>
+  <NavigationContainer>
+   <Stack.Navigator screenOptions={{ headerShown: false }}>
+    <Stack.Screen name="Inicial" component={TelaInicial} />
+    <Stack.Screen name="Menu" component={TelaMenu} />
+    <Stack.Screen name="Doces" component={TelaDoces} />
+   </Stack.Navigator>
+  </NavigationContainer>
  );
 }
-
-const styles = StyleSheet.create({
- container: {
-  flex: 1,
-  justifyContent: 'center',
-  alignItems: 'center',
-  backgroundColor: '#F5DDC7' // cor bege do fundo
- },
- image: {
-  width: 200,
-  height: 200,
-  marginBottom: 20
- },
- text: {
-  fontSize: 20,
-  color: '#7CA8A1',
-  fontWeight: 'bold'
- }
-});
 
