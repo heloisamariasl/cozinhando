@@ -10,9 +10,9 @@ import {
 import { AntDesign } from '@expo/vector-icons';
 import { FavoritosContext } from '../FavoritosContext';
 
-export default function TelaReceitaLasanha() {
+export default function TelaReceitaLasanhaFrango() {
   const { adicionarFavorito, removerFavorito, estaFavorito } = useContext(FavoritosContext);
-  const id = 'lasanha';
+  const id = 'lasanhaFrango';
   const favorito = estaFavorito(id);
 
   function alternarFavorito() {
@@ -38,31 +38,33 @@ export default function TelaReceitaLasanha() {
 
       <View style={styles.tempoContainer}>
         <AntDesign name="clockcircleo" size={18} color="#46210B" />
-        <Text style={styles.tempoTexto}>60min</Text>
+        <Text style={styles.tempoTexto}>70min</Text>
       </View>
 
       <Text style={styles.subtitulo}>Ingredientes</Text>
       <Text style={styles.texto}>
-        • 1 massa de lasanha pronta{'\n'}
-        • 1 fio de azeite{'\n'}
-        • 500 g de presunto{'\n'}
-        • 500 g de queijo mussarela{'\n'}
-        • 500 g de carne moída{'\n'}
+        • 1 pacote de massa de lasanha{'\n'}
+        • 500 g de peito de frango cozido e desfiado{'\n'}
+        • 2 colheres (sopa) de azeite{'\n'}
+        • 1 cebola picada{'\n'}
+        • 2 dentes de alho picados{'\n'}
         • 340 g de molho de tomate{'\n'}
-        • Sal e pimenta-do-reino a gosto{'\n'}
-        • Orégano a gosto
+        • 500 g de queijo mussarela{'\n'}
+        • 1 caixa de creme de leite{'\n'}
+        • Sal, pimenta-do-reino e orégano a gosto
       </Text>
 
       <Text style={styles.subtitulo}>Modo de preparo</Text>
       <Text style={styles.texto}>
-        1. Refogue a carne: em uma panela com azeite, refogue a carne por 10 minutos até dourar.{'\n\n'}
-        2. Adicione o molho: acrescente molho de tomate, sal, orégano e pimenta a gosto.{'\n\n'}
-        3. Cozinhe a massa: em outra panela, cozinhe a massa conforme as instruções.{'\n\n'}
-        4. Monte a lasanha: em um refratário, coloque uma camada de molho, massa e presunto/mussarela.{'\n\n'}
-        5. Repita camadas até terminar os ingredientes.{'\n\n'}
-        6. Asse em forno preaquecido a 180 °C por 30 minutos ou até gratinar. Sirva quente.
+        1. Refogue o frango: em uma panela com azeite, refogue cebola e alho até dourarem. Adicione o frango desfiado, sal, pimenta e orégano.{'\n\n'}
+        2. Acrescente o molho de tomate e cozinhe por mais 5 minutos.{'\n\n'}
+        3. Cozinhe a massa conforme as instruções da embalagem.{'\n\n'}
+        4. Monte a lasanha: em um refratário, alterne camadas de molho, massa, frango e queijo.{'\n\n'}
+        5. Finalize com o creme de leite por cima e mais queijo para gratinar.{'\n\n'}
+        6. Leve ao forno preaquecido a 180 °C por 30 minutos ou até dourar.
       </Text>
     </ScrollView>
+    
   );
 }
 

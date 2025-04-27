@@ -16,6 +16,7 @@ import TelaReceitaFrango from './screens/TelaReceitaFrango';
 import TelaReceitaEstrogonofe from './screens/TelaReceitaEstrogonofe';
 import TelaReceitaBatata from './screens/TelaReceitaBatata';
 import TelaReceitaCarbonara from './screens/TelaReceitaCarbonara';
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -24,7 +25,15 @@ export default function App() {
       <NavigationContainer>
         <Stack.Navigator
           initialRouteName="Inicial"
-          screenOptions={{ headerShown: false }}
+          screenOptions={{
+            headerShown: true, 
+            headerStyle: {
+              backgroundColor: '#46210B', 
+            },
+            headerTintColor: '#FFF', 
+            headerBackTitle: 'Voltar', 
+            headerBackImageTintColor: '#FFF', 
+          }}
         >
           <Stack.Screen name="Inicial" component={TelaInicial} />
           <Stack.Screen name="Menu" component={TelaMenu} />
@@ -32,18 +41,9 @@ export default function App() {
           <Stack.Screen name="Salgados" component={TelaSalgados} />
           <Stack.Screen name="Favoritos" component={TelaFavoritos} />
           <Stack.Screen name="ReceitaCenoura" component={TelaReceitaCenoura} />
-          <Stack.Screen
-            name="ReceitaChocolate"
-            component={TelaReceitaChocolate}
-          />
-          <Stack.Screen
-            name="ReceitaParmegiana"
-            component={TelaReceitaParmegiana}
-          />
-          <Stack.Screen
-            name="ReceitaLasanha"
-            component={TelaReceitaLasanha}
-          />
+          <Stack.Screen name="ReceitaChocolate" component={TelaReceitaChocolate} />
+          <Stack.Screen name="ReceitaParmegiana" component={TelaReceitaParmegiana} />
+          <Stack.Screen name="ReceitaLasanha" component={TelaReceitaLasanha} />
           <Stack.Screen name="ReceitaFrango" component={TelaReceitaFrango} />
           <Stack.Screen name="ReceitaEstrogonofe" component={TelaReceitaEstrogonofe} />
           <Stack.Screen name="ReceitaBatata" component={TelaReceitaBatata} />
