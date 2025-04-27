@@ -31,7 +31,7 @@ export default function App() {
               backgroundColor: '#46210B', 
             },
             headerTintColor: '#FFF', 
-            headerBackTitle: 'Voltar', 
+            headerBackTitle: null, 
             headerBackImageTintColor: '#FFF', 
           }}
         >

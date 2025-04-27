@@ -108,7 +108,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 16,
-    color: '#333',
+    color: '#46210B',
     lineHeight: 24,
     paddingHorizontal: 15,
     marginBottom: 20
