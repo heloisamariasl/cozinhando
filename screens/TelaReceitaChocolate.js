@@ -27,7 +27,10 @@ export default function TelaReceitaChocolate() {
     </TouchableOpacity>
    </View>
 
-   <Text style={styles.tempo}>⏱️ 50min</Text>
+  <View style={styles.tempoContainer}>
+    <AntDesign name="clockcircleo" size={18} color="#4D2C2C" />
+    <Text style={styles.tempoTexto}>50min</Text>
+  </View>
 
    <Text style={styles.subtitulo}>Ingredientes</Text>
 
