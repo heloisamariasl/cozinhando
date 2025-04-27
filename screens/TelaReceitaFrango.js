@@ -32,12 +32,12 @@ export default function TelaReceitaFrango() {
       <View style={styles.header}>
         <Text style={styles.titulo}>Frango à delícia</Text>
         <TouchableOpacity onPress={alternarFavorito}>
-          <AntDesign name={favorito ? 'star' : 'staro'} size={24} color="#4D2C2D" />
+          <AntDesign name={favorito ? 'star' : 'staro'} size={24} color="#46210B" />
         </TouchableOpacity>
       </View>
 
       <View style={styles.tempoContainer}>
-        <AntDesign name="clockcircleo" size={18} color="#4D2C2D" />
+        <AntDesign name="clockcircleo" size={18} color="#46210B" />
         <Text style={styles.tempoTexto}>45min</Text>
       </View>
 
@@ -89,14 +89,14 @@ const styles = StyleSheet.create({
   subtitulo: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#4D2C2D',
+    color: '#46210B',
     paddingHorizontal: 15,
     marginTop: 20,
     marginBottom: 8,
   },
   texto: {
     fontSize: 16,
-    color: '#333',
+    color: '#46210B',
     lineHeight: 24,
     paddingHorizontal: 15,
     marginBottom: 20,

@@ -25,12 +25,12 @@ export default function TelaReceitaParmegiana() {
    <View style={styles.header}>
     <Text style={styles.titulo}>Parmegiana</Text>
     <TouchableOpacity onPress={alternarFavorito}>
-     <AntDesign name={favorito ? 'star' : 'staro'} size={24} color="#C1622D" />
+     <AntDesign name={favorito ? 'star' : 'staro'} size={24} color="#46210B" />
     </TouchableOpacity>
    </View>
 
    <View style={styles.tempoContainer}>
-    <AntDesign name="clockcircleo" size={18} color="#4D7169" />
+    <AntDesign name="clockcircleo" size={18} color="#46210B" />
     <Text style={styles.tempoTexto}>45min</Text>
    </View>
 
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
  titulo: {
   fontSize: 24,
   fontWeight: 'bold',
-  color: '#4D7169',
+  color: '#46210B',
  },
  tempoContainer: {
   flexDirection: 'row',
@@ -94,19 +94,19 @@ const styles = StyleSheet.create({
  tempoTexto: {
   marginLeft: 5,
   fontSize: 16,
-  color: '#4D7169',
+  color: '#46210B',
  },
  subtitulo: {
   fontSize: 18,
   fontWeight: 'bold',
   marginTop: 20,
   marginBottom: 10,
-  color: '#C1622D',
+  color: '#46210B',
   marginLeft: 20,
  },
  texto: {
   fontSize: 16,
-  color: '#333',
+  color: '#46210B',
   marginHorizontal: 20,
   lineHeight: 24,
   marginBottom: 20,
