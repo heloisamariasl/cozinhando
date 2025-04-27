@@ -14,6 +14,8 @@ import TelaReceitaParmegiana from './screens/TelaReceitaParmegiana';
 import TelaReceitaLasanha from './screens/TelaReceitaLasanha';
 import TelaReceitaFrango from './screens/TelaReceitaFrango';
 import TelaReceitaEstrogonofe from './screens/TelaReceitaEstrogonofe';
+import TelaReceitaBatata from './screens/TelaReceitaBatata';
+import TelaReceitaCarbonara from './screens/TelaReceitaCarbonara';
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -44,6 +46,8 @@ export default function App() {
           />
           <Stack.Screen name="ReceitaFrango" component={TelaReceitaFrango} />
           <Stack.Screen name="ReceitaEstrogonofe" component={TelaReceitaEstrogonofe} />
+          <Stack.Screen name="ReceitaBatata" component={TelaReceitaBatata} />
+          <Stack.Screen name="ReceitaCarbonara" component={TelaReceitaCarbonara} />
         </Stack.Navigator>
       </NavigationContainer>
     </FavoritosProvider>
