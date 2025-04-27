@@ -1,16 +1,16 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, FlatList, Dimensions } from 'react-native';
+import { View, Text, Image, StyleSheet, FlatList, Dimensions, TouchableOpacity } from 'react-native';
 
 const salgados = [
- { nome: 'Parmegiana', imagem: require('../assets/parmegiana.jpg') },
- { nome: 'Lasanha', imagem: require('../assets/lasanha.jpg') },
- { nome: 'Frango à delícia', imagem: require('../assets/frango.jpg') },
- { nome: 'Estrogonofe', imagem: require('../assets/estrogonofe.jpg') },
- { nome: 'Batata recheada', imagem: require('../assets/batata.jpg') },
- { nome: 'Carbonara', imagem: require('../assets/carbonara.jpg') }
+ { nome: 'Parmegiana', imagem: require('../assets/parmegiana.jpg'), rota: 'ReceitaParmegiana' },
+ { nome: 'Lasanha', imagem: require('../assets/lasanha.jpg'), rota: 'ReceitaLasanha' },
+ { nome: 'Frango à delícia', imagem: require('../assets/frango.jpg'), rota: 'ReceitaFrango' },
+ { nome: 'Estrogonofe', imagem: require('../assets/estrogonofe.jpg'), rota: 'ReceitaEstrogonofe' },
+ { nome: 'Batata recheada', imagem: require('../assets/batata.jpg'), rota: 'ReceitaBatata' },
+ { nome: 'Carbonara', imagem: require('../assets/carbonara.jpg'), rota: 'ReceitaCarbonara' }
 ];
 
-export default function TelaSalgados() {
+export default function TelaSalgados({ navigation }) {
  return (
   <View style={styles.container}>
    <View style={styles.header}>
@@ -23,10 +23,10 @@ export default function TelaSalgados() {
     contentContainerStyle={styles.lista}
     keyExtractor={(item) => item.nome}
     renderItem={({ item }) => (
-     <View style={styles.item}>
+     <TouchableOpacity style={styles.item} onPress={() => navigation.navigate(item.rota)}>
       <Image source={item.imagem} style={styles.imagem} />
       <Text style={styles.nome}>{item.nome}</Text>
-     </View>
+     </TouchableOpacity>
     )}
    />
   </View>

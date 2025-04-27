@@ -27,7 +27,7 @@ export default function TelaReceitaCenoura() {
 
   return (
     <ScrollView style={styles.container}>
-      <Image source={require('../assets/cenoura.jpg')} style={styles.imagem} />
+      <Image source={require('../assets/cenoura2.jpg')} style={styles.imagem} />
       <View style={styles.header}>
         <Text style={styles.titulo}>Bolo de cenoura</Text>
         <TouchableOpacity onPress={alternarFavorito}>
