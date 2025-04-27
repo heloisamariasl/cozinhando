@@ -43,11 +43,16 @@ const styles = StyleSheet.create({
   color: '#FFF',
   fontWeight: 'bold'
  },
+ buttonsContainer: {
+    flex: 1,                 
+    justifyContent: 'center',
+    alignItems: 'center'     
+  },
  botao: {
   width: 200,
-  padding: 15,
-  borderRadius: 10,
-  marginVertical: 10,
+  padding: 18,
+  borderRadius: 20,
+  marginVertical: 20,
   alignItems: 'center'
  },
  botaoTexto: {

@@ -31,7 +31,7 @@ export default function TelaReceitaCenoura() {
       <View style={styles.header}>
         <Text style={styles.titulo}>Bolo de cenoura</Text>
         <TouchableOpacity onPress={alternarFavorito}>
-          <AntDesign name={favorito ? 'star' : 'staro'} size={24} color="#C1622D" />
+          <AntDesign name={favorito ? 'star' : 'staro'} size={24} color="#46210B" />
         </TouchableOpacity>
       </View>
 
@@ -77,18 +77,18 @@ const styles = StyleSheet.create({
   titulo: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#4D7169',
+    color: '#46210B',
   },
   subtitulo: {
     fontSize: 18,
     fontWeight: 'bold',
     marginTop: 20,
     marginBottom: 8,
-    color: '#C1622D',
+    color: '#46210B',
   },
   texto: {
     fontSize: 16,
-    color: '#333',
+    color: '#46210B',
     lineHeight: 24,
   },
 });
