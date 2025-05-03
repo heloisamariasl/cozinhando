@@ -26,6 +26,7 @@ export default function TelaMenu() {
  );
 }
 
+
 const styles = StyleSheet.create({
  container: {
   flex: 1,
