@@ -77,7 +77,7 @@ export default function TelaReceitaChocolate() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5DDC7'
+    backgroundColor: '#B15129'
   },
   imagem: {
     width: '100%',
